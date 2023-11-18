@@ -24,7 +24,7 @@ const Header = () => {
             <div className="flex">
                 <input type="text" placeholder="Search in Daraz" className="py-1 px-2 border-none rounded-md" />
                 <button type="submit" className="py-1 px-2 bg-gray-300 border-none rounded-md text-gray-800">
-                    <Image src="/cart-icon.png" alt="Cart" className="w-8 h-8 mr-1" />
+                    <Image src="" alt="Cart" className="w-8 h-8 mr-1" />
                 </button>
             </div>
             <div className="flex gap-2.5">
@@ -35,7 +35,7 @@ const Header = () => {
                 {/* <!-- Add other language options here --> */}
                 </select>
                 <a href="/cart" className="flex items-center no-underline text-white">
-                <Image src="/cart-icon.png" alt="Cart" className="w-8 h-8 mr-1" />
+                <Image src="" alt="Cart" className="w-8 h-8 mr-1" />
                 </a>
             </div>
         </header>
