@@ -12,10 +12,11 @@ export interface Product{
 }
 
 const List = (props: Product) => {
+    const imageUrl = props.image || "/wrap.png"
   return (
-        <section className="w-[189px] h-[320px] border hover:shadow-lg cursor-pointer">
+        <section className="w-[189px] h-[320px] border hover:shadow-lg cursor-pointer bg-white">
             <Link href={`${props.link}`} className="delay-100" />
-            <Image src={`${props.image}`} width={189} height={189} alt="wrap"/>
+            <Image src={imageUrl} width={189} height={189} alt="wrap"/>
             <div className="px-2">
                 <h4 className="relative text-base text-gray-500 mt-[10px]">{`${props.name}`}</h4>
                 <span className="relative text-base text-[#f85606]">{`${props.currency}.${props.price}`}</span><br />

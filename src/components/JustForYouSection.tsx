@@ -1,7 +1,7 @@
 import List from "@/components/List"
 import { Product } from "@/components/List";
 
-const HomePageProducts = () => {
+const JustForYou = () => {
   let products: Product[] = [
     {
       name: "Product Name 1",
@@ -52,36 +52,30 @@ const HomePageProducts = () => {
       link: "#"
     },
     {
-      name: "Product Name 7",
-      price: 1200,
-      oldprice: 2000,
+      name: "productname 7",
+      price: 1050,
+      oldprice: 2500,
       currency: "Rs",
       image: "/wrap.png",
       link: "#"
     },
     {
       name: "productname 8",
-      price: 1500,
-      oldprice: 2000,
-      currency: "Rs",
-      image: "/wrap.png",
-      link: "#"
-    },
-    {
-      name: "productname 9",
-      price: 2000,
-      oldprice: 3000,
+      price: 1050,
+      oldprice: 2500,
       currency: "Rs",
       image: "/wrap.png",
       link: "#"
     }
   ]
   return (
-    <section className="relative space-x-2 grid grid-cols-6 space-y-2">
+    <section className=" grid grid-cols-6 items-center gap-x-3 justify-center relative">
       {
         products.map((item) => {
           return (
-            <List name={item.name} price={item.price} oldprice={item.oldprice} link={item.link} image={item.image} currency={item.currency} />
+            <div className="flex-row inline-flex items-stretch  mb-3">
+            <List name={item.name} price={item.price} oldprice={item.oldprice} link={item.link} image={item.image} currency={item.currency}/>
+            </div>
           )
         })
       }
@@ -89,4 +83,4 @@ const HomePageProducts = () => {
   )
 }
 
-export default HomePageProducts
+export default JustForYou

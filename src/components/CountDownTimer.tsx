@@ -30,11 +30,11 @@ const CountdownTimer: React.FC<CountdownTimerProps> = ({ initialTime }) => {
 
   return (
     <div className="flex text-sm ml-3">
-        <div className="box-border border bg-[#ff6801] p-2">{formatTime(time).split(':')[0]}</div>
+        <div className="box-border border bg-[#ff6801] text-white p-2">{formatTime(time).split(':')[0]}</div>
         <span className="self-center text-[#ff6801] mx-1">:</span>
-        <div className="box-border border bg-[#ff6801] p-2">{formatTime(time).split(':')[1]}</div>
+        <div className="box-border border bg-[#ff6801] text-white p-2">{formatTime(time).split(':')[1]}</div>
         <span className="self-center text-[#ff6801] mx-1">:</span>
-        <div className="box-border border bg-[#ff6801] p-2">{formatTime(time).split(':')[2]}</div>
+        <div className="box-border border bg-[#ff6801] text-white p-2">{formatTime(time).split(':')[2]}</div>
     </div>
   );
 };
