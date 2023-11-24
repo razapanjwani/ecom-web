@@ -6,8 +6,7 @@ import img2 from "@/assets/place.png"
 
 const Header = () => {
   return (
-    <>
-      <header className="px-20 pb-2.5 bg-[#F85606] text-white h-24">
+      <header className="px-20 pb-2.5 bg-[#F85606] text-white h-24 w-max">
         {/* Upper Header */}
         <div className="w-[1188px] h-[25px] relative top-0 pt-0 pb-1">
           <div className="left-0 top-0 absolute text-white text-xs font-normal font-['Roboto'] leading-normal">
@@ -81,7 +80,6 @@ const Header = () => {
           </div>
         </div>
       </header>
-    </>
   )
 }
 
